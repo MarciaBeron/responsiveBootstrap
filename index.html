@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsive con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LOREM IPSUM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dolor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Amet</a>
+                    </li>
+                    <li class="nav-item d-lg-none" id="opciones">
+                        <a class="nav-link" id="opciones">Opciones</a>
+                        <ul class="list-group" id="opcionesNormal">
+                            <li class="list-group-item">Opción 1</li>
+                            <li class="list-group-item">Opción 2</li>
+                            <li class="list-group-item">Opción 3</li>
+                            <li class="list-group-item">Opción 4</li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Buscador -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <!-- Columna de opciones (visible en pantallas grandes) -->
+            <div class="col-lg-3 d-none d-lg-block">
+                <ul class="list-group">
+                    <li class="list-group-item">Opción 1</li>
+                    <li class="list-group-item">Opción 2</li>
+                    <li class="list-group-item">Opción 3</li>
+                    <li class="list-group-item">Opción 4</li>
+                </ul>
+            </div>
+
+            <!-- Columna de contenido principal -->
+            <div class="col-12 col-lg-9">
+                <h1>LOREM IPSUM</h1>
+                
+                <!-- Carrusel de texto que cambia cada 2 segundos -->
+                <div id="textCarousel" class="carousel slide d-block" data-bs-ride="carousel" data-bs-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Bloques de texto en columnas -->
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <p>  
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet, mauris a bibendum sagittis, eros dui imperdiet diam, nec ultricies purus risus id mi. Donec ultricies porttitor feugiat. Nunc malesuada mauris quis tellus tristique dapibus.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>    
+                            Vivamus pharetra leo metus, non convallis augue dictum ut. Cras sit amet ante mollis, aliquet felis at, malesuada ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>    
+                            Vivamus sollicitudin diam et imperdiet fermentum. Cras vel ipsum et ex ullamcorper finibus. Vivamus convallis sem a bibendum blandit. Mauris orci mauris, eleifend pellentesque sollicitudin non, volutpat eu velit.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <p> 
+                            Duis pellentesque lacinia dui, vitae eleifend odio fringilla in. Aliquam ultricies elit mauris, quis egestas ipsum dictum vitae. Aliquam ac sem eget risus convallis blandit eu quis elit. Fusce efficitur feugiat libero id mollis.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>    
+                            Fusce et rhoncus nisl. Nam mi risus, ultrices dapibus dolor id, dictum viverra nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus vitae rhoncus est. Pellentesque massa libero, fermentum gravida lobortis in.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>    
+                            Cras malesuada urna nec enim lacinia, quis fringilla eros accumsan. Cras quis nibh finibus, luctus erat ut, pulvinar mauris. Maecenas sed arcu rutrum, euismod tellus non, porta nisi. Quisque nec quam ac purus accumsan rhoncus.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

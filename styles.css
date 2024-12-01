@@ -1,0 +1,33 @@
+/* styles.css */
+
+/* Estilo personalizado para el texto principal */
+h1 {
+    font-size: 2rem;
+    color: #343a40;
+}
+
+#opcionesNormal {
+    display: none;
+}
+
+/* Personalizar la apariencia de la lista de opciones */
+.list-group-item {
+    border-radius: 0.375rem;
+    margin-bottom: 10px;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+
+
+
+/* Ajustar márgenes y padding para la vista móvil */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
